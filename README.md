@@ -1,8 +1,14 @@
 [![Build Status](https://app.travis-ci.com/pads/ambulance-handover.svg?token=zEWqqu5F4Yzg8D3FmEL2&branch=main)](https://app.travis-ci.com/pads/ambulance-handover)
 
-# Getting Started with Create React App
+# Getting Started with Ambulance Handover
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a `.env` file and add the following:
+
+```
+REACT_APP_AUTH0_DOMAIN=<obtain from Auth0 application settings>
+REACT_APP_AUTH0_CLIENT_ID=<obtain from Auth0 application settings>
+REACT_APP_AUTH0_CALLBACK_URL=http://localhost:3000
+```
 
 ## Available Scripts
 
