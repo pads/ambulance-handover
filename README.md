@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/pads/ambulance-handover.svg?token=zEWqqu5F4Yzg8D3FmEL2&branch=main)](https://app.travis-ci.com/pads/ambulance-handover)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
