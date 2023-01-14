@@ -17,6 +17,14 @@ export const HomePage = () => {
       )}
       {isAuthenticated && !isLoading && (
         <>
+          <ul>
+            <li>
+              <a href="/profile">User Profile</a>
+            </li>
+            <li>
+              <a href="/hospitals">Hospitals</a>
+            </li>
+          </ul>
           <LogoutButton />
         </>
       )}
