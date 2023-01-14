@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 describe('Ambulance Handover App', () => {
   it('renders the home page on load', () => {
     render(<App />, { wrapper: BrowserRouter });
-    const linkElement = screen.getByText(/Ambulance Handover/i);
-    expect(linkElement).toBeInTheDocument();
+    const appName = screen.getByText(/Ambulance Handover/i);
+    expect(appName).toBeInTheDocument();
   });
 });
