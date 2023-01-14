@@ -10,6 +10,18 @@ REACT_APP_AUTH0_CLIENT_ID=<obtain from Auth0 application settings>
 REACT_APP_AUTH0_CALLBACK_URL=http://localhost:3000
 ```
 
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+In a separate terminal run the API:
+
+```bash
+npm run api
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

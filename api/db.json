@@ -1,0 +1,7 @@
+{
+  "hospitals": [
+    { "id": 1, "name": "Warwick" },
+    { "id": 2, "name": "UHCW" },
+    { "id": 3, "name": "Horton General Hospital" }
+  ]
+}
