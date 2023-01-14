@@ -1,17 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import UserProfile from './components/UserProfile';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
-    <main className="container-fluid">
-      <header className="App-header">
-        <h1>Ambulance Handover</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <UserProfile />
-      </header>
-    </main>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 }
 
