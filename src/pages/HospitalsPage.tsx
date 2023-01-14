@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PageLayout } from '../components/PageLayout';
+import { apiService } from '../services/apiService';
 
 interface Hospital {
   id: number;
@@ -7,26 +8,32 @@ interface Hospital {
 }
 
 export const HospitalsPage = () => {
-  const [hospitals, setHospitals] = useState([]);
+  const [hospitals, setHospitals] = useState<Hospital[]>([]);
+  const [error, setError] = useState();
 
   useEffect(() => {
     const fetchHospitals = async () => {
-      const response = await fetch('http://localhost:3001/api/hospitals');
-      const hospitals = await response.json();
-      setHospitals(hospitals);
+      const { data, error } = await apiService<Hospital[]>('hospitals');
+      if (data) {
+        setHospitals(data);
+      }
+      if (error) {
+        setError(error.message);
+      }
     };
 
     fetchHospitals();
-  });
+  }, []);
 
-  const hospitalListItems = hospitals.map((hospital: Hospital) => (
+  const hospitalListItems = hospitals.map((hospital) => (
     <li key={hospital.id}>{hospital.name}</li>
   ));
 
   return (
     <PageLayout>
       <h1>Hospitals</h1>
-      <ul>{hospitalListItems}</ul>
+      {!error && <ul>{hospitalListItems}</ul>}
+      {error && <p>{error}</p>}
     </PageLayout>
   );
 };
