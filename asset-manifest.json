@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ambulance-handover/static/css/main.d7e26831.css",
-    "main.js": "/ambulance-handover/static/js/main.2d19d415.js",
+    "main.js": "/ambulance-handover/static/js/main.335ffc22.js",
     "static/js/787.28552322.chunk.js": "/ambulance-handover/static/js/787.28552322.chunk.js",
     "static/media/logo.svg": "/ambulance-handover/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ambulance-handover/index.html",
     "main.d7e26831.css.map": "/ambulance-handover/static/css/main.d7e26831.css.map",
-    "main.2d19d415.js.map": "/ambulance-handover/static/js/main.2d19d415.js.map",
+    "main.335ffc22.js.map": "/ambulance-handover/static/js/main.335ffc22.js.map",
     "787.28552322.chunk.js.map": "/ambulance-handover/static/js/787.28552322.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7e26831.css",
-    "static/js/main.2d19d415.js"
+    "static/js/main.335ffc22.js"
   ]
 }
