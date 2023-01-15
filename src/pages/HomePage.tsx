@@ -3,6 +3,7 @@ import { PageLayout } from '../components/PageLayout';
 import LoginButton from '../components/LoginButton';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from '../components/LogoutButton';
+import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -19,10 +20,10 @@ export const HomePage = () => {
         <>
           <ul>
             <li>
-              <a href="/profile">User Profile</a>
+              <Link to="/profile">User Profile</Link>
             </li>
             <li>
-              <a href="/hospitals">Hospitals</a>
+              <Link to="/hospitals">Hospitals</Link>
             </li>
           </ul>
           <LogoutButton />
