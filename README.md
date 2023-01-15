@@ -2,14 +2,7 @@
 
 # Getting Started with Ambulance Handover
 
-Create a `.env` file and add the following:
-
-```
-REACT_APP_AUTH0_DOMAIN=<obtain from Auth0 application settings>
-REACT_APP_AUTH0_CLIENT_ID=<obtain from Auth0 application settings>
-REACT_APP_AUTH0_CALLBACK_URL=http://localhost:3000/ambulance-handover
-```
-
+Copy `.env.template` to `.env` and replace the secrets as directed.
 Install the project dependencies:
 
 ```bash
