@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { PageLayout } from '../components/PageLayout';
 import { apiService } from '../services/apiService';
 
-interface Hospital {
+export interface Hospital {
   id: number;
   name: string;
 }
@@ -33,7 +33,7 @@ export const HospitalsPage = () => {
     <PageLayout>
       <h1>Hospitals</h1>
       {!error && <ul>{hospitalListItems}</ul>}
-      {error && <p>{error}</p>}
+      {error && <p data-testid="error-message">{error}</p>}
     </PageLayout>
   );
 };
