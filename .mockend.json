@@ -1,0 +1,7 @@
+{
+  "Hospital": {
+    "_": { "items": 3 },
+    "id": { "int": [1, 2, 3] },
+    "name": { "string": ["Warwick", "UHCW", "Horton General Hospital"] }
+  }
+}
